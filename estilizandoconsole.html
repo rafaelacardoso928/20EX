@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagem no Console</title>
+  <style>
+    body {
+      background-color: #e0f7fa;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #00695c;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #00bcd4;
+      color: white;
+      padding: 20px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 188, 212, 0.4);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+      transform: scale(1.1);
+    }
+
+    button:active {
+      background-color: #00838f;
+      transform: scale(1);
+    }
+
+    p {
+      font-size: 18px;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Mensagem no Console</h1>
+    <p>Clique no botão para ver a mensagem no console.</p>
+    <button onclick="mostrarMensagem()">Mostrar Mensagem</button>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      console.log("Você clicou no botão! 🎉");
+    }
+  </script>
+</body>
+</html>
