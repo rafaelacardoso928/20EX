@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudação ao Usuário</title>
+  <style>
+    body {
+      background-color: #e0f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #004d40;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      const nome = prompt("Qual é o seu nome?");
+      if (nome) {
+        alert("Olá, " + nome + "!");
+      } else {
+        alert("Olá, visitante!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Bem-vindo!</h1>
+  <p>Esta página irá saudá-lo assim que for carregada.</p>
+</body>
+</html>
