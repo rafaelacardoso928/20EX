@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudação Personalizada</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #880e4f;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      padding: 20px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Saudação Personalizada</h1>
+  <p>Clique no botão abaixo para receber uma saudação personalizada.</p>
+  
+  <button onclick="saudacao()">Obter Saudação</button>
+
+  <script>
+    function saudacao() {
+      const nome = prompt("Qual é o seu nome?");
+      const turno = prompt("Qual turno do dia você está? (manhã/tarde/noite)");
+
+      // Verificando o turno e criando a saudação personalizada
+      let saudacao = "Olá, " + nome + "! ";
+      
+      if (turno.toLowerCase() === "manhã") {
+        saudacao += "Bom dia!";
+      } else if (turno.toLowerCase() === "tarde") {
+        saudacao += "Boa tarde!";
+      } else if (turno.toLowerCase() === "noite") {
+        saudacao += "Boa noite!";
+      } else {
+        saudacao += "Turno inválido. Por favor, digite 'manhã', 'tarde' ou 'noite'.";
+      }
+
+      // Exibindo a saudação no console
+      console.log(saudacao);
+    }
+  </script>
+</body>
+</html>
