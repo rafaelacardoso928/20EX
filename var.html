@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redeclaração com var</title>
+  <style>
+    body {
+      background-color: #e3f2fd;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #0d47a1;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo com <code>var</code></h1>
+  <p>(Abra o console com F12 para ver os valores)</p>
+  <button onclick="mostrarValores()">Clique para ver no console</button>
+
+  <script>
+    function mostrarValores() {
+      var mensagem = "Primeira declaração com var";
+      console.log("Antes da nova declaração:", mensagem);
+
+      var mensagem = "Segunda declaração com var (valor alterado)";
+      console.log("Depois da nova declaração:", mensagem);
+    }
+  </script>
+</body>
+</html>
