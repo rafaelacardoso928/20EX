@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frase com Palavras</title>
+  <style>
+    body {
+      background-color: #e1f5fe;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #0277bd;
+    }
+
+    button {
+      background-color: #0288d1;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #01579b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Monte sua frase</h1>
+  <button onclick="criarFrase()">Inserir Palavras</button>
+
+  <script>
+    function criarFrase() {
+      let palavra1 = prompt("Digite a primeira palavra:");
+      let palavra2 = prompt("Digite a segunda palavra:");
+      let palavra3 = prompt("Digite a terceira palavra:");
+
+      if (palavra1 && palavra2 && palavra3) {
+        let frase = `Você digitou: ${palavra1}, ${palavra2} e ${palavra3}.`;
+        alert(frase);
+      } else {
+        alert("Você precisa digitar todas as três palavras.");
+      }
+    }
+  </script>
+</body>
+</html>
+
