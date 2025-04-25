@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Dados</title>
+  <style>
+    body {
+      background-color: #f3f4f6;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #4a4a4a;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #00796b;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #00796b;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Formulário de Dados</h1>
+    <form id="form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" placeholder="Digite sua idade" required>
+
+      <button type="button" onclick="mostrarDados()">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    function mostrarDados() {
+      // Captura os valores dos campos
+      const nome = document.getElementById('nome').value;
+      const idade = document.getElementById('idade').value;
+
+      // Exibe os dados com um alert
+      alert("Nome: " + nome + "\nIdade: " + idade);
+    }
+  </script>
+</body>
+</html>
