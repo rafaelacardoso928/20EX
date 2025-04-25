@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão com Alerta</title>
+  <style>
+    body {
+      background-color: #f1f8e9;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #33691e;
+    }
+
+    button {
+      background-color: #8bc34a;
+      color: white;
+      padding: 25px 50px;
+      font-size: 24px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #689f38;
+    }
+  </style>
+</head>
+<body>
+  <h1>Botão com Alerta</h1>
+  <button onclick="mostrarAlerta()">Clique Aqui</button>
+
+  <script>
+    function mostrarAlerta() {
+      alert("Você clicou no botão!");
+    }
+  </script>
+</body>
+</html>
