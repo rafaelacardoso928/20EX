@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudações</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #b71c1c;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #b71c1c;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #b71c1c;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #9b1c1c;
+    }
+
+    button:active {
+      background-color: #8a1414;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Saudações</h1>
+    <button onclick="mostrarOla()">Olá!</button>
+    <button onclick="mostrarTchau()">Tchau!</button>
+  </div>
+
+  <script>
+    function mostrarOla() {
+      alert("Olá!");
+    }
+
+    function mostrarTchau() {
+      alert("Tchau!");
+    }
+  </script>
+</body>
+</html>
