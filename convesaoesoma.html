@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somar Números</title>
+  <style>
+    body {
+      background-color: #e1bee7;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #7b1fa2;
+    }
+
+    button {
+      background-color: #9c27b0;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #7b1fa2;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #7b1fa2;
+    }
+
+    p {
+      font-size: 18px;
+      color: #8e24aa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Somar dois números</h1>
+  <p>Clique no botão abaixo para inserir dois números e somá-los.</p>
+  
+  <button onclick="somarNumeros()">Somar Números</button>
+
+  <script>
+    function somarNumeros() {
+      const numero1 = prompt("Digite o primeiro número:");
+      const numero2 = prompt("Digite o segundo número:");
+
+      // Convertendo os valores de string para número
+      const num1 = Number(numero1);
+      const num2 = Number(numero2);
+
+      // Verificando se as entradas são números
+      if (!isNaN(num1) && !isNaN(num2)) {
+        const soma = num1 + num2;
+        alert("A soma dos dois números é: " + soma);
+      } else {
+        alert("Por favor, digite números válidos.");
+      }
+    }
+  </script>
+</body>
+</html>
