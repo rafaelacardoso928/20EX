@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de Variáveis em JavaScript</title>
+  <style>
+    body {
+      background-color: #f3faff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #0d47a1;
+    }
+
+    h1 {
+      background-color: #bbdefb;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      color: #0d47a1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tipos de Variáveis em JavaScript</h1>
+  <p>Abra o console (F12) para ver os tipos e valores.</p>
+
+  <script>
+    
+    let texto = "Olá, mundo!";           // string
+    let numero = 42;                     // number
+    let verdadeiro = true;               // boolean
+    let lista = [1, 2, 3];               // array
+    let pessoa = { nome: "Ana", idade: 30 }; // object
+    let vazio = null;                  
+    let indefinido;                     
+
+    console.log("String:", texto, "| Tipo:", typeof texto);
+    console.log("Number:", numero, "| Tipo:", typeof numero);
+    console.log("Boolean:", verdadeiro, "| Tipo:", typeof verdadeiro);
+    console.log("Array:", lista, "| Tipo:", typeof lista);
+    console.log("Object:", pessoa, "| Tipo:", typeof pessoa);co
+    console.log("Null:", vazio, "| Tipo:", typeof vazio); 
+    console.log("Undefined:", indefinido, "| Tipo:", typeof indefinido);
+  </script>
+</body>
+</html>
