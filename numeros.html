@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soma de Números</title>
+  <style>
+    body {
+      background-color: #f1f8e9;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #33691e;
+    }
+
+    button {
+      background-color: #8bc34a;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #689f38;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Soma</h1>
+  <button onclick="somarNumeros()">Somar dois números</button>
+
+  <script>
+    function somarNumeros() {
+      const num1 = parseFloat(prompt("Digite o primeiro número:"));
+      const num2 = parseFloat(prompt("Digite o segundo número:"));
+
+      if (!isNaN(num1) && !isNaN(num2)) {
+        const soma = num1 + num2;
+        alert("A soma é: " + soma);
+      } else {
+        alert("Por favor, digite apenas números válidos.");
+      }
+    }
+  </script>
+</body>
+</html>
