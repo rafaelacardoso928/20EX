@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de Variáveis</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    table {
+      width: 80%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #00796b;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #00796b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de Variáveis em JavaScript</h1>
+  
+  <table id="tabela">
+    <thead>
+      <tr>
+        <th>Tipo de Variável</th>
+        <th>Exemplo</th>
+        <th>Comportamento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- A tabela será preenchida com JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+
+    function preencherTabela() {
+      const tabela = document.getElementById("tabela").getElementsByTagName("tbody")[0];
+
+      const variaveis = [
+        {
+          tipo: "var",
+          exemplo: "var nome = 'João';",
+          comportamento: "Pode ser redeclarada e tem escopo de função."
+        },
+        {
+          tipo: "let",
+          exemplo: "let idade = 30;",
+          comportamento: "Não pode ser redeclarada e tem escopo de bloco."
+        },
+        {
+          tipo: "const",
+          exemplo: "const cidade = 'São Paulo';",
+          comportamento: "Não pode ser redeclarada nem reatribuída e tem escopo de bloco."
+        }
+      ];
+
+      variaveis.forEach(item => {
+        const row = tabela.insertRow();
+        const cell1 = row.insertCell(0);
+        const cell2 = row.insertCell(1);
+        const cell3 = row.insertCell(2);
+        
+        cell1.textContent = item.tipo;
+        cell2.textContent = item.exemplo;
+        cell3.textContent = item.comportamento;
+      });
+    }
+
+ 
+    preencherTabela();
+  </script>
+
+</body>
+</html>
