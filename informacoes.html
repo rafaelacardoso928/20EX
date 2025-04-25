@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações Pessoais</title>
+  <style>
+    body {
+      background-color: #e1f5fe;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #0277bd;
+    }
+
+    button {
+      background-color: #0288d1;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #01579b;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #01579b;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Preencha suas informações</h1>
+  <p>Clique no botão para fornecer seu nome, idade e profissão</p>
+  
+  <button onclick="mostrarInformacoes()">Enviar Informações</button>
+
+  <script>
+    function mostrarInformacoes() {
+      const nome = prompt("Qual é o seu nome?");
+      const idade = prompt("Qual é a sua idade?");
+      const profissao = prompt("Qual é a sua profissão?");
+
+      // Exibindo as informações no console
+      console.log("Nome: " + nome);
+      console.log("Idade: " + idade);
+      console.log("Profissão: " + profissao);
+    }
+  </script>
+</body>
+</html>
